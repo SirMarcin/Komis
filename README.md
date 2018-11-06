@@ -1,0 +1,2 @@
+# Komis
+Learning stuff
