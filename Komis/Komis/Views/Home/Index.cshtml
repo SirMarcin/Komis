@@ -1,7 +1,8 @@
 ﻿@model HomeVM
 
 
-<h2 style="width:100%;">@Model.Tytul</h2>
+<h2 style="width:100%; margin-top:50px;">@Model.Tytul</h2>
+
 
 
 @foreach (var samochod in Model.Samochody)
@@ -12,7 +13,7 @@
             <div class="figure-caption">
                 <h3 class="pull-right">@samochod.Cena.ToString("c")</h3>
                 <h3>
-                    <a asp-controller="home" asp-action="Szczegoly" asp-route-id="@samochod.Id">@samochod.Marka</a> - @samochod.Model - @samochod.RokProdukcji
+                    <a asp-controller="home" asp-action="Szczegoly" asp-route-id="@samochod.Id"> @samochod.Marka </a> - @samochod.Model - @samochod.RokProdukcji
                 </h3>
                 <h4>
                     Przebieg : @samochod.Przebieg
