@@ -23,6 +23,7 @@ namespace Komis
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<ISamochodRepository, SamochodRepository>();
+            services.AddTransient<IOpiniaRepository, OpiniaRepository>();
             services.AddMvc();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
