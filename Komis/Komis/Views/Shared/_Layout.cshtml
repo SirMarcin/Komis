@@ -9,20 +9,21 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-light fixed-top bg-light" >
-        <div class="container">
-            <div class="navbar-collapse">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Opinia" asp-action="Index">Opinia</a>
+                </li>
+            </ul>
 
-
-                <ul class="nav navbar-nav">
-                    <li><a asp-controller="home" asp-action="Index" class="navbar-brand">Komis</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
-
-
-
+    
     <div class="container body.content">
         <div class="row">
             @RenderBody()
