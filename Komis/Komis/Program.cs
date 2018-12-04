@@ -8,6 +8,8 @@ namespace Komis
 {
     public class Program
     {
+        public static object Cookies { get; internal set; }
+
         public static void Main(string[] args)
         {
             //CreateWebHostBuilder(args).Build().Run();

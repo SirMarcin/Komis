@@ -18,7 +18,6 @@ namespace Komis.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-
             var samochody = _samochodRepository.PobierzWszystkieSamochody().OrderBy(s => s.Marka);
 
             var homeVM = new HomeVM()

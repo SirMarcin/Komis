@@ -1,11 +1,11 @@
 ﻿@model Opinia
-<form asp-action="Index" method="post" class="form-horizontal col-10" role="form">
+<form asp-action="Index" method="post" class="form-horizontal col-10" role="form" >
 
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <div class="form-group">
         <label asp-for="NazwaUzytkownika" class="col-md-2 col- control-label "></label>
-        <div class="col-md-5">
+        <div>
             <input asp-for="NazwaUzytkownika" class="form-control" />
             <span asp-validation-for="NazwaUzytkownika" class="text-danger"></span>
         </div>
@@ -13,7 +13,7 @@
 
     <div class="form-group">
         <label asp-for="Email" class="col-md-2 control-label "></label>
-        <div class="col-md-5">
+        <div>
             <input asp-for="Email" class="form-control" />
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
@@ -21,7 +21,7 @@
 
     <div class="form-group">
         <label asp-for="Wiadomosc" class="col-md-2 control-label "></label>
-        <div class="col-md-5">
+        <div>
             <textarea asp-for="Wiadomosc" class="form-control"></textarea>
             <span asp-validation-for="Wiadomosc" class="text-danger"></span>
 
@@ -29,9 +29,9 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="OczekujeOdpowiedzi" class="col-md-2 control-label "></label>
-        <div class="col-md-5">
-            <input type="checkbox" asp-for="OczekujeOdpowiedzi" class="form-control" />
+        <label asp-for="OczekujeOdpowiedzi"></label>
+        <div>
+            <input type="checkbox" asp-for="OczekujeOdpowiedzi" />
         </div>
     </div>
 
