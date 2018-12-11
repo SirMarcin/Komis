@@ -20,6 +20,18 @@ namespace Komis.Controllers
         {
             return View(_samochodRepository.PobierzWszystkieSamochody());
         }
+
+        public IActionResult Details(int id)
+        {
+            var samochod = _samochodRepository.PobierzSamochodId(id);
+            
+                if (samochod == null)
+                {
+                    return NotFound();
+                }
+                return View(samochod);
+            
+        }
     }
 }
  
